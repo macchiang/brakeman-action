@@ -7,7 +7,7 @@ FROM ruby:${RUBY_VER}-alpine
 # Install Rubygems and dependencies
 WORKDIR /brakeman
 
-COPY Gemfile Gemfile
+COPY Gemfile Gemfile.lock
 RUN set -eux; \
     apk add --no-cache --update --virtual .ruby-builddeps \
     build-base \
