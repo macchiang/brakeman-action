@@ -13,7 +13,7 @@ This action can be configured by the following input parameters.
 | name | require | default | description |
 |---|---|---|---|
 | path | false | `'.'` | Relative path to scan. |
-| options | false | `'--no-progress --no-exit-on-warn --no-exit-on-error --color -o /dev/stdout -o brakeman_results.html'` | Additional options. |
+| options | false | `'--no-progress --no-exit-on-warn --no-exit-on-error --color -o /dev/stdout -o ${GITHUB_WORKSPACE}/brakeman_results.html'` | Additional options. |
 <!-- textlint-enable spellcheck-tech-word -->
 see [brakeman options](https://brakemanscanner.org/docs/options/).
 
