@@ -30,9 +30,6 @@ on:
 jobs:
   Brakeman:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-      statuses: write
     steps:
       - uses: actions/checkout@v3
         with:
