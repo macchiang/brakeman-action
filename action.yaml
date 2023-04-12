@@ -12,7 +12,7 @@ inputs:
   options:
     description: "Additional options"
     required: false
-    default: "--no-progress --no-exit-on-warn --no-exit-on-error --color -o /dev/stdout -o brakeman_results.html"
+    default: "--no-progress --no-exit-on-warn --no-exit-on-error --color -o /dev/stdout -o /github/workspace/brakeman_results.html"
 runs:
   using: "docker"
   image: docker://ghcr.io/macchiang/brakeman-action:v3
