@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    brakeman (5.4.1)
+
+PLATFORMS
+  aarch64-linux-musl
+  x86_64-linux-musl
+
+DEPENDENCIES
+  brakeman
+
+BUNDLED WITH
+   2.4.10

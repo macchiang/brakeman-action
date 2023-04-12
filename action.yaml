@@ -1,0 +1,19 @@
+name: "Brakeman Action"
+description: "Github action of brakeman"
+author: "Mac Chiang"
+branding:
+  icon: "code"
+  color: "blue"
+inputs:
+  path:
+    description: "Relative path to check"
+    required: false
+    default: "."
+  options:
+    description: "Additional options"
+    required: false
+    default: "--no-progress --no-exit-on-warn --no-exit-on-error --color -o /dev/stdout -o brakeman_results.html"
+runs:
+  using: "docker"
+  image: docker://ghcr.io/macchiang/brakeman-action:v3
+  entrypoint: "/brakeman/entrypoint.sh"
