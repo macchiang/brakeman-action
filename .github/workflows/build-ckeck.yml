@@ -10,6 +10,6 @@ jobs:
   pronto:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: build Docker image
         run: docker build -t brakeman-action:test .
